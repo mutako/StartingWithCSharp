@@ -1,0 +1,26 @@
+using System;
+
+public class Example
+{
+    public static void Main()
+    {
+        string line;
+        Console.WriteLine("Enter one or more lines of text (press 'gg' to exit):");
+        do
+        {
+            Console.Write(" ");
+            line = Console.ReadLine();
+            if (line != "b")
+                Console.WriteLine($" So what do you want to tell me with this {line} ? \n Come on, you can do it better!");
+            else
+                Console.WriteLine("u rock");
+        }
+        while (line != "gg");
+
+        // while (Console.ReadLine() != "gg");
+        // ako ostawim Console.ReadLine, to shte ni dobawq edin red w poweche
+        // i shte ni powtarq napisanoto wednyj poweche
+    }
+}
+// if (line != "gg")
+//           Console.WriteLine("      " +line);
